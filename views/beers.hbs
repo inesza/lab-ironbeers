@@ -1,0 +1,10 @@
+<section class="beers-list container">
+    {{#each allBeers}}
+    <article class="beer">
+        <a href="/beer/{{this.id}}">
+            <img src="{{this.image_url}}" alt="{{this.name}}" class="beer-pic">
+            {{> beerPart this}}
+        </a>
+    </article>
+    {{/each}}
+</section>
